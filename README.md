@@ -20,7 +20,6 @@ streamlit run https://raw.githubusercontent.com/bukosabino/streamlit-demo-financ
 
 # TODO
 
-* Use cache streamlit system
 * Heatmap: Visualize the correlation coefficient in between ta features.
 * Web application user can load a .csv file
 
