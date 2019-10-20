@@ -18,7 +18,7 @@ return_value = st.sidebar.selectbox(
 
 
 # Data preparation
-@st.cache()
+@st.cache(ignore_hash=True)
 def load_data():
 
     # Load financial dataset
@@ -32,16 +32,15 @@ def load_data():
     df = ta.add_volatility_ta(df, "High", "Low", "Close", fillna=False, colprefix=ta_col_prefix)
     df = ta.add_momentum_ta(df, "High", "Low", "Close", "Volume_Currency", fillna=False, colprefix=ta_col_prefix)
 
-    # Prepare target: X Periods Return
-    df['y'] = (df['Close'] / df['Close'].shift(return_value) - 1) * 100
-
-    # Clean NaN values
-    df = df.dropna()
-
     return df
 
 df = load_data()
 
+# Prepare target: X Periods Return
+df['y'] = (df['Close'] / df['Close'].shift(return_value) - 1) * 100
+
+# Clean NaN values
+df = df.dropna()
 
 # Body
 st.title('EDA for financial datasets (OHLCV)')
