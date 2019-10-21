@@ -50,7 +50,7 @@ b = datetime.utcfromtimestamp(df['Timestamp'].tail(1)).strftime('%Y-%m-%d %H:%M:
 st.write(f'We try to explore a small financial time series dataset (2000 rows) with BTC/USD prices from {a} to {b}')
 st.write('We start with an OHLCV financial dataset, and we get some technical analysis features from the original '
          'dataset using [ta package](https://github.com/bukosabino/ta). Then, we define the target value as the X '
-         'daily return value (the user can set it). Finally, we explore these features and the target column '
+         'period return value (the user can set it). Finally, we explore these features and the target column '
          'graphically.')
 
 st.subheader('Dataframe')
