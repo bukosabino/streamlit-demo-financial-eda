@@ -22,7 +22,7 @@ return_value = st.sidebar.selectbox(
 def load_data():
 
     # Load financial dataset
-    df = pd.read_csv('data/data.csv', sep=',')
+    df = pd.read_csv('https://raw.githubusercontent.com/bukosabino/streamlit-demo-financial-eda/master/data/data.csv', sep=',')
 
     # Clean NaN values
     df = ta.utils.dropna(df)
