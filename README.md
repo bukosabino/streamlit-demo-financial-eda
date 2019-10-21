@@ -24,6 +24,10 @@ streamlit run https://raw.githubusercontent.com/bukosabino/streamlit-demo-financ
 * Web application user can load a .csv file
 
 
+# Extra
+
+Are you interested in more Streamlit demos related to financial data? --> https://github.com/paduel/streamlit_finance_chart/
+
 # Contact
 
 Developed by Darío López Padial (Bukosabino).
