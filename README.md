@@ -26,7 +26,10 @@ streamlit run https://raw.githubusercontent.com/bukosabino/streamlit-demo-financ
 
 # Extra
 
-Are you interested in more Streamlit demos related to financial data? --> https://github.com/paduel/streamlit_finance_chart/
+Are you interested in more Streamlit demos related to financial data? 
+
+* [Yahoo Finance data web app](https://github.com/paduel/streamlit_finance_chart)
+
 
 # Contact
 
