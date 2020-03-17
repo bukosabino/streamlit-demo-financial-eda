@@ -1,6 +1,6 @@
 # Automated EDA on financial dataset
 
-Just a simple way to get automated Exploration Data Analysis from financial dataset (OHLCV) using [Streamlit](https://github.com/streamlit/streamlit) and [ta](github.com/bukosabino/ta).
+Just a simple way to get automated Exploration Data Analysis from financial dataset (OHLCV) using [Streamlit](https://github.com/streamlit/streamlit) and [ta](https://github.com/bukosabino/ta).
 
 To use this library you need a financial time series dataset including `Timestamp`, `Open`, `High`, `Low`, `Close` and `Volume` columns.
 
